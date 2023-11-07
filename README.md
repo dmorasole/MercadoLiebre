@@ -1,2 +1,2 @@
 # MercadoLiebre
-Sitio para aprender en DIgital House
+Sitio para aprender en Digital House
