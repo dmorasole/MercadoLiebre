@@ -1,0 +1,115 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    --Negro: black;
+    --blanco: white;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    background-color: var(--Amarillo);
+    margin-bottom: 30px;
+}
+
+.formreg {
+    width: 355px;
+    height: 480px;
+    border: 1.5px solid var(--Negro);
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--Gris-claro);
+    box-shadow: 7px 13px 37px var(--Gris-oscuro);
+}
+
+form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--Negro);
+    text-align: center;
+}
+
+form .formulario {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form .formulario div {
+    display: flex;
+    margin-bottom: 10px;
+    align-content: space-between;
+}
+
+form .formulario div label {
+    display: inline-block;
+    width: 40%;
+    text-align: end;
+}
+
+form .formulario div input {
+    width: 200px;
+    margin-left: 5px;
+}
+
+form .check {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form .check .perfil {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 0px 20px 10px 20px;
+}
+
+form .check .perfil p {
+    display: inline-block;
+    width: 40%;
+    text-align: end;
+    padding-right: 3px;
+}
+
+form .check .perfil label {
+    padding: 0px 5px;
+}
+
+form .check .categoria {
+    display: flex;
+    flex-direction: column;
+}
+
+form .check .categoria p {
+    text-align: center;
+}
+
+form .check .categoria label {
+    text-align: left;
+    margin: 2px 0px 1px 200px;
+}
+
+form .botones {
+    margin-top: 10px;
+    text-align: center;
+    border-top: 1.5px solid var(--Negro);
+
+}
+
+form .botones button {
+
+    width: 100px;
+    color: var(--blanco);
+    background-color: var(--Celeste);
+}
+
+form .botones button:hover {
+    cursor: pointer;
+    color: var(--Negro);
+}

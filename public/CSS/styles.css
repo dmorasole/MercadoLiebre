@@ -1,0 +1,244 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    --Negro: black;
+    --blanco: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: var(--Amarillo);
+}
+
+/*----------------HEADER---------------*/
+
+header {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--Negro);
+    padding:5px
+}
+
+.logo-search {
+    width: 100%;
+   text-align: center;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.logo-search .logo {
+    width: 50%;
+    text-align: start;
+   display: inline; 
+}
+
+.logo-search .search {
+    width: 50%; 
+    display: flex;
+    align-items: center;     
+    justify-content: flex-end;
+}
+
+.logo-search .search .search-input {
+    width: 150px;
+    text-align: left;   /*end*/
+    border-radius: 5px;
+    border: 1px solid var(--Gris-oscuro);
+    background-color: var(--blanco);
+}
+
+.logo-search .search .search-input input {
+    width: 150px;
+    height: 20px;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+/*   cuando el logo esta adentro
+.logo-search .search .search-input i {
+    height: 20px;
+    width: 20px;
+    color: var(--Negro);
+    border-radius: 50px;
+} */
+
+.logo-search .search i {
+    height: 20px;
+    width: 20px;
+    color: var(--Negro);
+    border-radius: 50px;
+}
+.compras {
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.burger-menu {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu #burguer {
+    border: solid 1px var(--blanco);
+    padding: 5px;
+    border-radius: 3px;
+    background-color: var(--Azul);
+    color: var(--blanco);
+}
+
+/*--- Menu---*/
+
+header nav {
+    display: none;
+}
+
+/*------MAIN--------*/
+
+
+/*------------FOOTER----------------*/
+
+footer {
+    width: 90%;
+    margin-top: 30px;
+    margin: 0px auto;
+    border-top: 1px solid var(--Negro);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer i {
+    margin-bottom: 10px;
+    size: 2em;
+}
+#icon2 {
+    color: #1259c3;
+}
+
+#icon2:hover {
+    color:var(--Gris-claro);
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer h3 {
+    color: var(--Negro);
+}
+
+@media (min-width: 362px) {
+    /* Tablets */
+
+    .burger-menu {
+        display: none;
+    }
+
+    header .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+       align-items: center;
+       justify-content: space-between;
+    }
+
+    .container .logo-search {
+        width: 362px;
+    }
+
+    .container .compras {
+        width: 50%; 
+        margin: 0px auto;
+        display: flex;
+        justify-content: end;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    header nav .navegador {
+        width: 100%;
+        height: auto;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        align-items: center;
+    }
+
+    header nav .navegador .conte-1 {
+        margin: 10px;
+        display: flex;
+        text-decoration: none;
+        cursor: pointer;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    header nav .navegador .conte-2 {
+        margin: 10px;
+        display: flex;
+        text-decoration: none;
+        cursor: pointer;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        align-content: center;
+    }
+
+    header nav .navegador a {
+        margin: 0px 5px;
+        color: var(--Azul);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    header nav .navegador a i {
+        color: var(--Celeste);
+    }
+  
+}
+/* Laptop */
+@media (min-width: 768px){
+  .footer {display:flex;
+           flex-direction:row;              
+          justify-content: space-around;
+          }
+  
+  .ultima-visita article  { 
+       box-shadow:0px 0px 10px RGB(100,100,100);  /* creo que no va*/
+   }
+}
+@media (min-width: 1200px){
+    header {   
+       width: 1200px;
+    }
+  }

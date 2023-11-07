@@ -1,0 +1,80 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+    --Negro: black;
+    --blanco: white;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    background-color: var(--Amarillo);
+    margin-bottom: 30px;
+}
+
+.formlog {
+    width: 330px;
+    height: 200px;
+    border: 1.5px solid var(--Negro);
+    border-radius: 10px;
+    margin: auto;
+    background-color: var(--Gris-claro);
+    box-shadow: 7px 13px 37px var(--Gris-oscuro);
+}
+
+form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--Negro);
+    text-align: center;
+}
+
+form .login {
+    margin: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+form .login span {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+form .login span label {
+    display: inline-block;
+    width: 40%;
+    text-align: end;
+}
+
+form p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+form p a {
+    text-decoration: none;
+}
+
+form .botones {
+    margin: 10px 0px;
+    text-align: center;
+    border-top: 1.5px solid var(--Negro);
+}
+
+form .botones button {
+
+    width: 100px;
+    color: var(--blanco);
+    background-color: var(--Gris-oscuro);
+}
+
+form .botones button:hover {
+    cursor: pointer;
+    color: var(--Gris-claro);
+    background-color: #0022AA;
+}
